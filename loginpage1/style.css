@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #172031;
+}
+
+.login{
+    background: rgba(0,0,0,.5);
+    border-radius: 10px;
+    width: 400px;
+    padding: 40px;
+}
+
+.login h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.login .box-user {
+    position: relative;
+}
+
+.login .box-user input{
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    border: 0;
+    background: transparent;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.login .box-user label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login .box-user input:focus~label,
+.login .box-user input:valid~label
+{
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 10px;
+}
+
+.esqueceu {
+    font-size: 14px;
+    color: #5b6b8b;
+    float: right
+}
+
+.entrar {
+    font-size: 14px;
+    color: black;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: lightgreen;
+    font-weight: 900;   
+    border-radius: 5px; 
+    text-decoration: none;
+}
